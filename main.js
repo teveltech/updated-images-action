@@ -32,7 +32,7 @@ const old_mod_arr = old_str_set.map(
 );
 const repos = new_mod_arr.map((a) => a.repo);
 if (findDuplicates(repos))
-  core.error('duplicated versions of ' + findDuplicates(repos).toString());
+  core.warning('duplicated versions of ' + findDuplicates(repos).toString());
 
 let changes_str = "";
 new_mod_arr.forEach(service => {
