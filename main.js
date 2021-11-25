@@ -38,7 +38,7 @@ let changes_str = "";
 new_mod_arr.forEach(service => {
     let i = old_mod_arr.findIndex((image) => image.repo === service.repo);
     if (i >= 0 && old_mod_arr[i].version !== service.version)
-        changes_str += service.repo + ':' + old_mod_arr[i].version + '->' + service.version + '\n';
+        changes_str += service.repo + ': ' + old_mod_arr[i].version + ' -> ' + service.version + '\n';
 });
 
 core.setOutput("changed", changes_str);
