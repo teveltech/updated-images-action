@@ -14,5 +14,5 @@ outputs:
   changed:
     description: "updated images and their tags"
 runs:
-  using: 'node12'
+  using: 'node20'
   main: 'main.js'
